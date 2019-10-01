@@ -25,8 +25,6 @@ import android.widget.Toast;
 
 import com.example.owaspatividade.R;
 import com.example.owaspatividade.signup.SignUpActivity;
-import com.example.owaspatividade.ui.login.LoginViewModel;
-import com.example.owaspatividade.ui.login.LoginViewModelFactory;
 
 public class LoginActivity extends AppCompatActivity {
 

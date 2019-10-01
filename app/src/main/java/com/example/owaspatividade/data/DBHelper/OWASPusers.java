@@ -6,6 +6,9 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class OWASPusers extends SQLiteOpenHelper {
 
     //nome e versão do banco de dados
@@ -36,5 +39,11 @@ public class OWASPusers extends SQLiteOpenHelper {
         //Recria tabela se ela ja existe
         db.execSQL("DROP TABLE IF EXISTS OWASPusers.db");
         onCreate(db);
+    }
+
+    public void buscarUsers(){
+        List<String> dados = new ArrayList<>();
+        String sql = "SELECT * FROM users";
+        int coluna = 1;
     }
 }
